@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="Images/BMW Logo.svg" type="image/svg+xml" />
+        <title>BMW</title>
+    </head>
+    <body>
+        <div id="mobileMessage">
+            <img src="Images/BMW Logo.svg" alt="" />
+            <div class="message">This website is best viewed on a computer. Please open it on a larger screen for the best experience.</div>
+        </div>
+
+        <div id="main-website">
+            <div id="pre-loader">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li class="active" onclick="addLine(this), scrollToSection('section1')">
+                        <a href="#section1"
+                            >Home
+                            <div class="line"></div
+                        ></a>
+                    </li>
+                    <li onclick="addLine(this), scrollToSection('section2')">
+                        <a href="#section2"
+                            >Models
+                            <div class="line"></div
+                        ></a>
+                    </li>
+                    <li onclick="addLine(this), scrollToSection('section3')">
+                        <a href="#section3"
+                            >M Sport
+                            <div class="line"></div
+                        ></a>
+                    </li>
+                    <li onclick="addLine(this), scrollToSection('section1')">
+                        <a href="#section1"><img src="Images/BMW Logo.svg" alt="Logo" /></a>
+                    </li>
+                    <li onclick="addLine(this), scrollToSection('section4')">
+                        <a href="#section4"
+                            >Bike
+                            <div class="line"></div
+                        ></a>
+                    </li>
+                    <li onclick="addLine(this), scrollToSection('section5')">
+                        <a href="#section5"
+                            >Gallery
+                            <div class="line"></div
+                        ></a>
+                    </li>
+                    <li onclick="addLine(this), scrollToSection('section6')">
+                        <a href="#section6"
+                            >Contact
+                            <div class="line"></div
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="section1">
+                <div id="parallax-wrapper">
+                    <div class="parallax-container">
+                        <div class="vignette"></div>
+                        <img src="Images/Background/Layer 1.png" data-speedx="0" data-speedy="0" class="parallax parallax-layer-1" />
+                        <img src="Images/Background/Layer 2.png" data-speedx="0.20" data-speedy="0.20" class="parallax parallax-layer-2" />
+                        <img src="Images/Background/Layer 3.png" data-speedx="0.18" data-speedy="0.18" class="parallax parallax-layer-3" />
+                        <img src="Images/Background/Layer 4.png" data-speedx="0.15" data-speedy="0.15" class="parallax parallax-layer-4" />
+                        <img src="Images/Background/Layer 5.png" data-speedx="0.15" data-speedy="0.15" class="parallax parallax-layer-5" />
+                        <img src="Images/Background/Layer 6.png" data-speedx="0.13" data-speedy="0.13" class="parallax parallax-layer-6" />
+                        <img src="Images/Background/Layer Text.png" data-speedx="0.1" data-speedy="0.1" class="parallax parallax-layer-7" />
+                        <img src="Images/Background/Layer 7.png" data-speedx="0.08" data-speedy="0" class="parallax parallax-layer-8" />
+                        <img src="Images/Background/Layer 8.png" data-speedx="0.05" data-speedy="0" class="parallax parallax-layer-9" />
+                        <img src="Images/Background/Layer 9.png" data-speedx="0.05" data-speedy="0" class="parallax parallax-layer-10" />
+                        <img src="Images/scroll.gif" data-speedx="0.08" data-speedy="0" class="parallax parallax-layer-8 scroll-gif" />
+                    </div>
+                </div>
+            </section>
+            <section id="section2">
+                <div class="main-content-container">
+                    <div class="main-content">
+                        <div class="container360">
+                            <input type="range" value="" min="0" max="100" id="slider-range" oninput="update360()" class="grab" />
+                            <div id="main360">
+                                <img src="Images/Cars/2/0.png" id="image360" />
+                                <div id="base360"></div>
+                            </div>
+                        </div>
+                        <div class="models">
+                            <div class="series2">
+                                <div class="image"></div>
+                                <h1>2</h1>
+                            </div>
+                            <div class="series5">
+                                <div class="image"></div>
+                                <h1>5</h1>
+                            </div>
+                            <div class="series6">
+                                <div class="image"></div>
+                                <h1>6</h1>
+                            </div>
+                            <div class="X3">
+                                <div class="image"></div>
+                                <h1>X3</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section3">
+                <div class="main-content-container">
+                    <div class="main-content">
+                        <div id="mStrip">
+                            <div class="blue"></div>
+                            <div class="violet"></div>
+                            <div class="red"></div>
+                        </div>
+                        <div id="carousel">
+                            <div class="controls">
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="image">
+                                        <img src="Images/Cars/M/0.png" alt="" />
+                                    </div>
+                                    <div class="info">
+                                        <h1>BMW M8 COMPETITION COUPÉ</h1>
+                                        <p>
+                                            With its distinguished motorsport legacy, BMW M has long been all about racetrack-inspired engineering and performance. On the 50th anniversary of this unmatched automotive journey, we commend our community
+                                            of fans, drivers, and M enthusiasts for upholding the ethos of M. The past 50 years have been about providing pure JOY to our customers - faster heartbeats, surging adrenaline and unbridled excitement. Now,
+                                            to celebrate BMW M's fascinating history, we're launching some exciting '50 Jahre M' editions through the year. As part of the celebrations, we now present the new BMW M8 Competition Coupé 50 Jahre M'
+                                            Edition. The M8 badge itself leaves no doubt that the ultimate experience of M is imminent. Built for the racetrack, it's the embodiment of pure performance and represents the essence of what we have
+                                            learned and developed over the last 50 years. And despite its sports car genes, the lavishly designed interior of the BMW M8 Competition Coupé '50 Jahre M' Edition sets new standards in luxury. This car is
+                                            the cutting edge of BMW M, pushing the limits of driving physics for that ultimate adrenaline thrill.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="Images/Cars/M/1.png" alt="" />
+                                    </div>
+                                    <div class="info">
+                                        <h1>BMW XM</h1>
+                                        <p>
+                                            The all-new 2023 BMW XM is a high-performance luxury SUV that is sure to turn heads. It is the first plug-in hybrid M vehicle, and it is also the most powerful BMW ever built. The XM is powered by a
+                                            4.4-liter twin-turbocharged V8 engine and an electric motor. Combined, they produce 738 horsepower and 738 lb-ft of torque. This allows the XM to accelerate from 0 to 60 mph in just 3.7 seconds. The XM also
+                                            has an impressive all-electric range of up to 30 miles. This means that you can drive around town without emitting any tailpipe emissions. The XM comes standard with a variety of luxury features, including
+                                            a panoramic sunroof, four-zone climate control, and a Bowers & Wilkins Diamond Surround Sound System. It also has a spacious and comfortable interior with seating for up to five passengers.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="Images/Cars/M/2.png" alt="" />
+                                    </div>
+                                    <div class="info">
+                                        <h1>BMW M340i</h1>
+                                        <p>
+                                            The BMW M340i is a high-performance variant of the BMW 3 Series sedan. It is powered by a 3.0-liter inline-six engine that produces 382 horsepower and 369 lb-ft of torque. The M340i is available with either
+                                            rear-wheel drive or all-wheel drive. The M340i is a blast to drive. It has a powerful engine that provides plenty of acceleration, and its handling is sharp and responsive. The M340i is also surprisingly
+                                            comfortable, making it a great car for daily driving. The BMW M340i is a great choice for drivers who want a high-performance sedan that is also comfortable and practical. It is a perfect balance of
+                                            performance, luxury, and everyday usability.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="Images/Cars/M/3.png" alt="" />
+                                    </div>
+                                    <div class="info">
+                                        <h1>BMW M4 COMPETITION COUPÉ</h1>
+                                        <p>
+                                            The 2023 BMW M4 Competition Coupé is a high-performance sports car that is sure to turn heads. It is powered by a 3.0-liter twin-turbocharged inline-six engine that produces 503 horsepower and 479 lb-ft of
+                                            torque. This potent engine is paired with an eight-speed automatic transmission. The M4 Competition Coupé is also equipped with a variety of performance-enhancing features, including an adaptive M
+                                            suspension, an active M differential, and M compound brakes. These features work together to provide the M4 Competition Coupé with exceptional handling, agility, and stopping power. On the outside, the M4
+                                            Competition Coupé is distinguished by its aggressive and muscular design. It features a bold front end with a large kidney grille and LED headlights. The rear end features a wide stance, quad exhaust pipes,
+                                            and an M spoiler.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="Images/Cars/M/4.png" alt="" />
+                                    </div>
+                                    <div class="info">
+                                        <h1>BMW X3 M40i</h1>
+                                        <p>
+                                            The BMW X3 M40i is a high-performance version of the BMW X3 SUV. It is powered by a 3.0-liter turbocharged inline-six engine that produces 382 horsepower and 369 lb-ft of torque. This potent engine is
+                                            paired with an eight-speed automatic transmission. BMW X3 M40i SUV The X3 M40i is a blast to drive. It has plenty of power for passing and merging, and its handling is sharp and responsive. The X3 M40i is
+                                            also surprisingly comfortable, making it a great car for daily driving. The BMW X3 M40i is a great choice for drivers who want a high-performance SUV that is also comfortable and practical. It is a perfect
+                                            balance of performance, luxury, and everyday usability.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="Images/Cars/M/5.png" alt="" />
+                                    </div>
+                                    <div class="info">
+                                        <h1>BMW Z4 M40i</h1>
+                                        <p>
+                                            The BMW Z4 M40i is a high-performance version of the BMW Z4 roadster. It is powered by a 3.0-liter turbocharged inline-six engine that produces 382 horsepower and 369 lb-ft of torque. This potent engine is
+                                            paired with an eight-speed automatic transmission. The Z4 M40i is a blast to drive. It has plenty of power for passing and merging, and its handling is sharp and responsive. The Z4 M40i is also surprisingly
+                                            comfortable, making it a great car for daily driving.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="Images/Cars/M/6.png" alt="" />
+                                    </div>
+                                    <div class="info">
+                                        <h1>BMW M2 COUPÉ</h1>
+                                        <p>
+                                            The all-new BMW M2 Coupé is a compact, high-performance sports car that packs a serious punch. It's powered by a 3.0-liter twin-turbocharged inline-six engine that produces 453 horsepower and 406 lb-ft of
+                                            torque. This potent engine is paired with a standard 6-speed manual transmission or an optional 8-speed M Steptronic Sport automatic transmission. The M2 Coupé is also equipped with a variety of
+                                            performance-enhancing features, including an adaptive M suspension, an active M differential, and M compound brakes. These features work together to provide the M2 Coupé with exceptional handling, agility,
+                                            and stopping power.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="Images/Cars/M/7.png" alt="" />
+                                    </div>
+                                    <div class="info">
+                                        <h1>BMW X4 XDRIVE M40i</h1>
+                                        <p>
+                                            The BMW X4 xDrive M40i is a high-performance sports activity coupe (SAC) that combines the practicality of an SUV with the performance of a sports car. It is powered by a 3.0-liter turbocharged inline-six
+                                            engine that produces 382 horsepower and 369 lb-ft of torque. This potent engine is paired with an eight-speed automatic transmission and all-wheel drive. The X4 M40i is capable of accelerating from 0 to 60
+                                            mph in just 4.4 seconds and has a top speed of 155 mph. It also has excellent handling and agility, thanks to its sport-tuned suspension and all-wheel drive system. Inside, the X4 M40i features a luxurious
+                                            and sporty interior with M-specific seats, a leather-wrapped steering wheel, and a curved display with infotainment system and digital instrument cluster. It also has a spacious cargo compartment with up to
+                                            52.6 cubic feet of space.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div id="carouselBase360"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section4">
+                <div class="main-content-container">
+                    <div class="main-content">
+                        <div class="details">
+                            <h1>THE BMW</h1>
+                            <h2>G 310 R</h2>
+                            <p>
+                                Wake up with a smile on your face. Because every day is an opportunity to try something new – with the BMW G 310 R. It is an intuitive, agile ride thanks to the optimized engine with Ride by Wire and slipper clutch,
+                                whether you are off to work, to an appointment, or out of the city. Experience the maneuverability, easy handling, and sportiness of the G 310 R and use it to push to new boundaries every single day - simply put:
+                                <strong>#NeverStopChallenging.</strong>
+                            </p>
+                            <div id="color-picker">
+                                <h6>Choose your colour</h6>
+                                <div class="colors">
+                                    <div class="color1"></div>
+                                    <div class="color2"></div>
+                                    <div class="color3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <div id="bike-image"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section5">
+                <div class="main-content-container">
+                    <div id="popup">
+                        <img id="popupImage" class="popup-content" />
+                    </div>
+                    <div class="main-content">
+                        <div id="gallery">
+                            <div class="row">
+                                <div><img src="Images/Gallery/0.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/1.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/2.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/3.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/4.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/5.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/6.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/7.jpg" alt="" /></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="Images/Gallery/8.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/9.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/10.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/11.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/12.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/13.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/14.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/15.jpg" alt="" /></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="Images/Gallery/16.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/17.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/18.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/19.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/20.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/21.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/22.jpg" alt="" /></div>
+                                <div><img src="Images/Gallery/23.jpg" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section6">
+                <div class="main-content-container">
+                    <div class="main-content">
+                        <div id="contact-form">
+                            <div class="left">
+                                <form action="index.html" target="_blank" autocomplete="off">
+                                    <h1>Get in touch</h1>
+                                    <div class="input-wrap">
+                                        <input type="text" name="name" class="input-field" autocomplete="off" id="name" required />
+                                        <label for="name">Name</label>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <input type="text" name="email" class="input-field" autocomplete="off" id="email" required />
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <input type="text" name="subject" class="input-field" autocomplete="off" id="subject" required />
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <textarea name="message" class="input-textarea" id="message" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                    <div class="submit-wrap">
+                                        <input type="submit" value="" class="send-btn" />
+                                        <div class="send-label">
+                                            <img src="Images/Icons/send.svg" alt="" />
+                                            <h2>Send</h2>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="right">
+                                <h1>Contact us</h1>
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="Images/Icons/email.svg" alt="" />
+                                        </div>
+                                        <div class="data">
+                                            <p><b>Email:</b> info@bmwdealership.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="Images/Icons/phone.svg" alt="" />
+                                        </div>
+                                        <div class="data">
+                                            <p><b>Phone Number:</b> (555) 123-4567</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="Images/Icons/location.svg" alt="" />
+                                        </div>
+                                        <div class="data">
+                                            <p><b>Address:</b> 456 Bavarian Avenue, Auto City, CA 98765</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="Images/Icons/time.svg" alt="" />
+                                        </div>
+                                        <div class="data">
+                                            <p><b>Timing:</b> Mon - Fri, 9:00 AM to 5:00 PM</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
